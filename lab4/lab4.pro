@@ -33,7 +33,6 @@ SOURCES += \
     scene_container.cpp \
     objects.cpp \
     positions.cpp \
-    points.cpp \
     camera.cpp \
     model.cpp \
     edges.cpp \
@@ -41,7 +40,8 @@ SOURCES += \
     draw.cpp \
     file_loader.cpp \
     file_save.cpp \
-    model_builder.cpp
+    model_builder.cpp \
+    points.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -51,7 +51,6 @@ HEADERS += \
     scene_container.h \
     objects.h \
     positions.h \
-    points.h \
     camera.h \
     model.h \
     exceptions.h \
@@ -63,7 +62,8 @@ HEADERS += \
     draw.h \
     file_loader.h \
     file_save.h \
-    model_builder.h
+    model_builder.h \
+    points.h
 
 FORMS += \
         mainwindow.ui
