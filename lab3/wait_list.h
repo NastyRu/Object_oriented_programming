@@ -5,7 +5,7 @@ class wait_list {
 public:
     wait_list();
     wait_list(int kol);
-    wait_list(const wait_list &);
+    //wait_list(const wait_list &);
     ~wait_list();
     bool is_empty();
     void add(int el);

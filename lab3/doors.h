@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QLabel>
+#include <QTimer>
 
 class doors : public QObject {
     Q_OBJECT
@@ -21,6 +22,9 @@ public:
 private:
     doors_state dstate;
     QLabel *state_doors;
+    QTimer door_open_timer;
+    QTimer door_close_timer;
+    int wait_time = 1000;
 
 public slots:
     void open_doors();

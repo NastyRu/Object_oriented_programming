@@ -28,11 +28,15 @@ public:
     void labels(QLabel *state_floor, QLabel *state_lift, QLabel *state_doors);
     void buttons(int n, ...);
     void get_floor(int f);
-    void pause(int msec);
 
 private:
     QLabel *state_floor;
     QLabel *state_lift;
+    QTimer lift_up_timer;
+    QTimer lift_down_timer;
+    QTimer lift_wait_close_up;
+    QTimer lift_wait_close_down;
+
     int cur_floor;
     int next_floor;
     int begin_floor = 1;
@@ -42,6 +46,8 @@ private:
     button *my_button[NUM_FLOORS];
     lift_state lstate;
     void go_to_floor(int f);
+
+    int wait_time = 1000;
 
 public slots:
     void go_up();

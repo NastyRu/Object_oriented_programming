@@ -12,13 +12,13 @@ wait_list::wait_list(int kol) {
     n = 0;
 }
 
-wait_list::wait_list(const wait_list &l) {
+/*wait_list::wait_list(const wait_list &l) {
     this->init = l.init;
     this->elem = new int [l.init];
     for (int i = 0; i < l.init; i++) {
         this->elem[i] = l.elem[i];
     }
-}
+}*/
 
 wait_list::~wait_list() {
     delete [] elem;

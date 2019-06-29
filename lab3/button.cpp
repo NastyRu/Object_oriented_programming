@@ -16,12 +16,12 @@ void button::set_btn(QPushButton *btn) {
 
 void button::press() {
     bstate = pressed;
-    btn->setStyleSheet("color:red");
+    btn->setStyleSheet("color: red");
 }
 
 void button::reset() {
     bstate = reseted;
-    btn->setStyleSheet("color:white");
+    btn->setStyleSheet("color: white");
 }
 
 bool button::is_pressed() {
